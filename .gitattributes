@@ -1,0 +1,13 @@
+# 仓库里统一存 LF，检出到 Windows 时自动换成 CRLF，避免"整个文件都变了"的假改动
+* text=auto eol=lf
+
+# 二进制文件不参与换行转换
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.hex   binary
+*.bin   binary
+*.elf   binary
+*.o     binary

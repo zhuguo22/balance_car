@@ -1,0 +1,44 @@
+# ============================================================
+# balance_car 的 .gitignore
+# 规则：源码和工程配置进库，能自动生成的东西不进库
+# ============================================================
+
+# ---------- 编译产物（每次 build 都会重新生成） ----------
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# 可执行 / 固件 / 中间文件
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+*.d
+*.axf
+*.crf
+*.dep
+
+# ---------- CLion / IntelliJ ----------
+# .idea/ 里的共享配置（modules.xml、misc.xml 等）要提交，
+# 个人窗口状态由 .idea/.gitignore 负责忽略（workspace.xml 等）
+*.iws
+out/
+
+# ---------- 临时文件 / 工具锁 ----------
+.dsh-ops-*
+*.lock
+
+# ---------- 系统 / 编辑器杂项 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
+*~
